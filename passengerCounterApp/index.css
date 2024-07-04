@@ -4,6 +4,12 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     text-align: center;
+
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column; /* To stack the elements vertically */
 }
 
 h1 {
@@ -27,6 +33,7 @@ button {
     width: 200px;
     margin-bottom: 5px;
     border-radius: 5px;
+    display: block
 }
 
 #increment-btn {
