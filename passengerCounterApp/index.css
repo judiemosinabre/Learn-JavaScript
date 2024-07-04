@@ -10,6 +10,8 @@ body {
     height: 100vh;
     margin: 0;
     flex-direction: column; /* To stack the elements vertically */
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -24,6 +26,11 @@ h2 {
     margin-bottom: 20px;
 }
 
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 button {
     border: none;
     padding-top: 10px;
@@ -33,7 +40,9 @@ button {
     width: 200px;
     margin-bottom: 5px;
     border-radius: 5px;
-    display: block
+    font-size: 4vw;
+    box-sizing: border-box;
+    /* display: block */
 }
 
 #increment-btn {
@@ -47,4 +56,14 @@ button {
 
 #reset-btn {
     background: darkred;
+}
+
+@media (min-width: 600px){
+    h2{
+        font-size: 50px;
+    }
+
+    button {
+        font-size: 20px;
+    }
 }
