@@ -8,34 +8,30 @@
     <title>Basketball Scoreboard</title>
 </head>
 <body>
-    <!--<h1 id="countdown">1:00</h1>-->
-    <div class="scoreboard">
-        <div class="home box">
-            <h2>HOME</h2>
-            <p id="homeScore">3</p>
-    
-            <div id="button">
-                <button onclick="homePlus1()">+1</button>
-                <button onclick="homePlus2()">+2</button>
-                <button onclick="homePlus3()">+3</button>
+    <div class="wrapper">
+        <div class="scoreboard">
+            <div class="home box">
+                <h2>HOME</h2>
+                <p class="home score">3</p>
+        
+                <div class="buttons">
+                    <button onclick="homePlus1()">+1</button>
+                    <button onclick="homePlus2()">+2</button>
+                    <button onclick="homePlus3()">+3</button>
+                </div>
             </div>
-        </div>
-        <div class="guest box">
-            <h2>GUEST</h2>
-            <p id="guestScore">0</p>
-    
-            <div id="button">
-                <button onclick="guestPlus1()">+1</button>
-                <button onclick="guestPlus2()">+2</button>
-                <button onclick="guestPlus3()">+3</button>
+            <div class="guest box">
+                <h2>GUEST</h2>
+                <p class="guest score">0</p>
+        
+                <div class="buttons">
+                    <button onclick="guestPlus1()">+1</button>
+                    <button onclick="guestPlus2()">+2</button>
+                    <button onclick="guestPlus3()">+3</button>
+                </div>
             </div>
         </div>
     </div>
-    <!--
-    <div id="timer">
-        <button>START</button>
-        <button>NEW GAME</button>
-    </div>
-    -->
+    <p id="credits">made with 🩷 | by j-archives</p>
 </body>
 </html>

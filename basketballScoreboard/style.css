@@ -1,26 +1,38 @@
 @font-face {
     font-family: 'CustomFont'; 
     src: url('assets/cursed-timer-font/CursedTimerUlil-Aznm.ttf'); 
-  }
+}
 
 body {
     background-color: rgba(27, 36, 74, 1);
     text-align: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh; /* Ensures the body takes at least the full viewport height */
     margin: 0;
     padding: 0;
+}
+
+.wrapper {
+    flex-grow: 1; /* Allows the wrapper to expand and fill available space */
+    display: flex;
+    flex-direction: column; /* If your design allows, to better manage internal spacing */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevents internal content from causing scrolling */
+    padding: 20px;
+    box-sizing: border-box; /* Includes padding in the element's total width and height */
 }
 
 .scoreboard {
     display: flex;
     justify-content: center;
-    gap: 20px;  /*Adjust the value to control the space between the boxes */
+    align-items: center;
+    gap: 20px; /* Adjust the value to control the space between the boxes */
     width: 80%;
-    flex-wrap: wrap;
-    
+    max-width: 800px; /* Example: set max-width for responsiveness */
 }
 
 .box {
@@ -28,7 +40,6 @@ body {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    width: 20%;
     flex: 1;
     min-width: 200px; /* Minimum width to prevent too much shrinking */
     max-width: 300px; /* Maximum width to prevent too much stretching */
@@ -41,13 +52,16 @@ h2 {
     font-size: 40px;
 }
 
-p {
+.score {
     font-family: 'CustomFont', sans-serif;
     color: rgba(249, 79, 109, 1);
     font-size: 80px;
     margin: 30px 20px;
-    
+    background-color: rgba(8, 0, 1, 1);
+    padding: 20px 10px;
+    border-radius: 10px;
 }
+
 .buttons {
     display: flex;
     justify-content: space-around;
@@ -63,22 +77,18 @@ button {
     border: 2px solid rgba(154, 171, 216, 1);
     border-radius: 5px;
     cursor: pointer;
-    
 }
 
 button:hover {
     background-color: rgba(38, 50, 72, 1);
 }
 
-#homeScore {
-    background-color: rgba(8, 0, 1, 1);
-    padding: 20px 10px;
-    border-radius: 10px;
-    
-}
-
-#guestScore {
-    background-color: rgba(8, 0, 1, 1);
-    padding: 20px 10px;
-    border-radius: 10px;
+#credits {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(238, 238, 238, 1);
+    font-size: 15px;
+    margin-top: auto; /* Pushes the element to the bottom */
+    margin-bottom: 45px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
 }
