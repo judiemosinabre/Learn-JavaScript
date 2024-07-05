@@ -23,11 +23,13 @@ body {
     align-items: center;
     overflow: hidden; /* Prevents internal content from causing scrolling */
     padding: 20px;
+    gap: 20px;
     box-sizing: border-box; /* Includes padding in the element's total width and height */
 }
 
 .scoreboard {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 20px; /* Adjust the value to control the space between the boxes */
@@ -89,6 +91,15 @@ button:hover {
     font-size: 15px;
     margin-top: auto; /* Pushes the element to the bottom */
     margin-bottom: 45px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+#scorer {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(238, 238, 238, 1);
+    font-size: 20px;
+    margin-bottom: 20px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
 }
