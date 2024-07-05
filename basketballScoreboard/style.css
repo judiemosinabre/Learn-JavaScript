@@ -1,0 +1,79 @@
+body {
+    background-color: rgba(27, 36, 74, 1);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    gap: 20px;  /*Adjust the value to control the space between the boxes */
+    width: 80%;
+    flex-wrap: wrap;
+    
+}
+
+.box {
+    background-color: rgba(187, 184, 184, 0.301);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 20%;
+    flex: 1;
+    min-width: 200px; /* Minimum width to prevent too much shrinking */
+    max-width: 300px; /* Maximum width to prevent too much stretching */
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgba(238, 238, 238, 1);
+    font-size: 40px;
+}
+
+p {
+    font-family: 'LED Digital 7', sans-serif;
+    color: rgba(249, 79, 109, 1);
+    font-size: 80px;
+    margin: 30px 20px;
+    
+}
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+button {
+    padding: 15px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(27, 36, 74, 1);
+    color: rgba(154, 171, 216, 1);
+    border: 2px solid rgba(154, 171, 216, 1);
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: rgba(38, 50, 72, 1);
+}
+
+#homeScore {
+    background-color: rgba(8, 0, 1, 1);
+    padding: 20px 10px;
+    border-radius: 10px;
+    
+}
+
+#guestScore {
+    background-color: rgba(8, 0, 1, 1);
+    padding: 20px 10px;
+    border-radius: 10px;
+}
