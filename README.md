@@ -1,10 +1,15 @@
 # Learn-JavaScript
 files for learning JavaScript
 
-<p>As of now, i'm learning JavaScript.
-This repository will serve as a storage of my files and for future references.
+<h6>You can also view them by opening the corresponding links! </h6>
+<h5>
+  <ul>
+    <li>Scoreboard: http://127.0.0.1:3000/basketballScoreboard/index.html</li>
+    <li>Passenger Counter: http://127.0.0.1:3000/passengerCounterApp/index.html</li>
+  </ul>
+</h5>
 
-My goal is to finish this online course by July 13. wml!
 
-Date Started: 07/02/2024 <br>
-Date Finished: </p>
+
+<h6> Date Started: 07/02/2024 <br>
+Date Finished: </h6>
