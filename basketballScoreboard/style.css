@@ -52,7 +52,7 @@ h2 {
     font-size: 40px;
 }
 
-.score {
+#home-score, #guest-score{
     font-family: 'CustomFont', sans-serif;
     color: rgba(249, 79, 109, 1);
     font-size: 80px;
