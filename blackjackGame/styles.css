@@ -5,6 +5,7 @@ body{
     text-align: center;
     color: white;
     font-weight: bold;
+    margin: auto;
 
 }
 
@@ -14,16 +15,21 @@ h1 {
 
 #message-el {
     font-style: italic;
+    
 }
 
 button {
     background-color: goldenrod;
     border: goldenrod;
-    border-radius: 5px;
+    border-radius: 2px;
     font-weight: bold;
     color: #016f32;
     width: 150px;
     height: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 2px;
+    margin-top: 2px;
 }
 
 button:hover {
