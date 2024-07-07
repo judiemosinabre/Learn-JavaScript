@@ -1,5 +1,5 @@
-body{
-    background-image: url("images/table.png");
+/* body{
+    background-image: url("images/purple-table.png");
     background-size: cover;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
@@ -7,10 +7,43 @@ body{
     font-weight: bold;
     margin: auto;
 
+} */
+
+
+body, html {
+    /* background-image: url("images/purple-table.png"); */
+    background-color: #4B0082;
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    gap: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.5); 
+    width: 250px;
+    padding: 50px;
+    border-radius: 10px; 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.699); 
+    
 }
 
 h1 {
-    color: goldenrod;
+    color: gold;
+    font-size: 45px;
+    margin-top: 5px;
+    font-weight: bold;
+
 }
 
 #message-el {
@@ -19,19 +52,22 @@ h1 {
 }
 
 button {
-    background-color: goldenrod;
-    border: goldenrod;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #9400D3;
+    border: gold;
     border-radius: 2px;
     font-weight: bold;
-    color: #016f32;
-    width: 150px;
+    font-size: 15px;
+    color: gold;
+    width: 250px;
     height: 25px;
     padding-top: 5px;
     padding-bottom: 5px;
-    margin-bottom: 2px;
-    margin-top: 2px;
+    margin-bottom: 4px;
+    margin-top: 4px;
 }
 
 button:hover {
     cursor: pointer;
 }
+
