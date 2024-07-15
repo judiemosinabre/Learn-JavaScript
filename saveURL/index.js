@@ -8,8 +8,13 @@ const ulEl = document.getElementById("ul-el")
 inputBtn.addEventListener("click", function(){
     myLeads.push(inputEl.value)
     renderLeads()
+    clearText(inputEl)
 
 })
+
+function clearText(inputEl) {
+    inputEl.value = ""
+}
 
 function renderLeads() {
     // placeholder for listItems
