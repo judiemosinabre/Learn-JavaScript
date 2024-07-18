@@ -1,0 +1,64 @@
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+
+#container {
+    border: 1px solid rgba(178, 149, 255, 1);
+    border-radius: 15px;
+    color: black;
+    padding: 30px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+#input-el {
+    margin: 25px;
+    
+    border: 2px solid black(178, 149, 255, 1);
+    border-radius: 10px;
+    font-size: 58px;
+    font-weight: bolder;
+    width: 100px;
+    color: black;
+    text-align: center;
+}
+
+#convert-btn{
+    background: white;
+    color: rgba(61, 61, 61, 1);
+    border: 1px solid black;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 25px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+
+
+.convertedValue {
+    background: rgba(204, 193, 255, 0.507);
+    margin-top: 25px;
+    padding: 10px 50px;
+    border: 1px solid rgba(178, 149, 255, 1);
+    border-radius: 10px;
+    font-size: 14px;
+}
