@@ -19,7 +19,7 @@ body {
     border: 1px solid rgba(178, 149, 255, 1);
     border-radius: 15px;
     color: black;
-    padding: 30px 100px;
+    padding: 30px 12px;
     display: flex;
     flex-direction: column;
 }
@@ -61,6 +61,7 @@ h1 {
     border: 1px solid rgba(178, 149, 255, 1);
     border-radius: 10px;
     font-size: 14px;
+    width: 50vh;
 }
 
 
