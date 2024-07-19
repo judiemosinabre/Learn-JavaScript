@@ -5,11 +5,14 @@ const volConverter = document.getElementById("vol-converter")
 const massConverter = document.getElementById("mass-converter")
 
 
+
+
 convertBtn.addEventListener("click", function(){
     lengthConvert()
 })
 
 function lengthConvert() {
+    clearResult()
     let toFeet = (inputEl.value*3.281).toFixed(3)
     let toMeters = (inputEl.value/3.281).toFixed(3)
 
@@ -23,7 +26,6 @@ function lengthConvert() {
     `<p>
         ${inputEl.value} meters = ${toFeet} feet | ${inputEl.value} feet = ${toMeters} meters
     </p>`
-
     
     volConverter.innerHTML += 
     `<p>
@@ -35,4 +37,10 @@ function lengthConvert() {
         ${inputEl.value} kilos = ${toPounds} pounds | ${inputEl.value} pounds = ${toKilogram} kilos
     </p>`
 
+}
+
+function clearResult() {
+    lengthConverter.innerHTML = `<h4>Length (Meter/Feet)</h4>`
+    volConverter.innerHTML = `<h4>Volume (Liters/Gallons))</h4>`
+    massConverter.innerHTML = `<h4>Mass (Kilograms/Pounds)</h4>`
 }

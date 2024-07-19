@@ -19,7 +19,7 @@ body {
     border: 1px solid rgba(178, 149, 255, 1);
     border-radius: 15px;
     color: black;
-    padding: 30px 12px;
+    padding: 25px 12px;
     display: flex;
     flex-direction: column;
 }
@@ -56,11 +56,11 @@ h1 {
 
 .convertedValue {
     background: rgba(204, 193, 255, 0.507);
-    margin-top: 25px;
+    margin-top: 18px;
     padding: 10px 50px;
     border: 1px solid rgba(178, 149, 255, 1);
     border-radius: 10px;
-    font-size: 14px;
+    font-size: 12px;
     width: 50vh;
 }
 
