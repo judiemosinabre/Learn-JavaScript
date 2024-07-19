@@ -1,16 +1,13 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js"
-
-const firebaseConfig = {
-    
-}
-
-//Initialize Fiirebase
-const app = initializeApp(firebaseConfig)
-
 let myLeads = []
 
+// myLeads = JSON.parse(myLeads)
+// myLeads.push("https://v2.scrimba.com/learn-javascript-c0v/~04j")
+// console.log(typeof myLeads)
 
+// myLeads = JSON.stringify(myLeads)
+// console.log(typeof myLeads)
 
+//const = constant, cannot re-assign value
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
@@ -23,8 +20,13 @@ if (leadsFromLocalStorage) {
     render(myLeads)
 }
 
+// const tabs = [
+//     {url: "https://www.linkedin.com/in/per-harald-borgen/"}
+// ]
 
 tabBtn.addEventListener("click", function() {
+    // console.log(tabs[0].url)
+
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
         console.log(tabs)
         myLeads.push(tabs[0].url)
@@ -55,15 +57,21 @@ function clearText(inputEl) {
 }
 
 function render(leads) {
+    // placeholder for listItems
     let listItem = ""
 
     for (let i=0; i<leads.length; i++){
+        // listItem += "<li><a target='_blank' href ='" + myLeads[i] + "'>" + myLeads[i] + "</a></li>"
         listItem += `
         <li>
             <a target='_blank' href ='${leads[i]}'> 
                 ${leads[i]}
             </a>
         </li>`
+
+        // create element --> const li = document.createElement("li")
+        // set text content --> li.textContent = myLeads[i]
+        // append to ul --> ulEl.append(li)
 
     }
 
