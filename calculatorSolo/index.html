@@ -1,36 +1,41 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Calculator</title>
-        <link rel="icon" type="image/x-icon" href="">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <div id="container">
-            <p id="answer">0</p>
-            <button class="row-1">AC</button>
-            <button class="row-1">+/-</button>
-            <button class="row-1">%</button>
-            <button class="row-1">/</button>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <p id="history">‎  </p>
+        <input id="answer">
+        <div class="buttons">
+            <button class="row-1" id="all-clear">AC</button>
+            <button class="row-1" id="modulus">%</button>
+            <button class="row-1" id="divide">/</button>
+            <button class="col-4" id="clear">C</button>
 
-            <button class="row-2">7</button>
-            <button class="row-2">8</button>
-            <button class="row-2">9</button>
-            <button class="row-2">*</button>
+            <button id="seven">7</button>
+            <button id="eight">8</button>
+            <button id="nine">9</button>
+            <button class="col-4" id="multiply">x</button>
 
-            <button class="row-3">4</button>
-            <button  class="row-3">5</button>
-            <button class="row-3">6</button>
-            <button class="row-3">-</button>
+            <button id="four">4</button>
+            <button id="five">5</button>
+            <button id="six">6</button>
+            <button class="col-4" id="minus">-</button>
 
-            <button class="row-4">1</button>
-            <button class="row-4">2</button>
-            <button class="row-4">3</button>
-            <button class="row-4">+</button>
+            <button id="one">1</button>
+            <button id="two">2</button>
+            <button id="three">3</button>
+            <button class="col-4" id="plus">+</button>
 
-            <button class="row-5">0</button>
-            <button class="row-5">.</button>
-            <button class="row-5">=</button>
+            <button id="zero">0</button>
+            <button id="point">.</button>
+            <button class="col-4" id="equal">=</button>
         </div>
-    </body>
+    </div>
+</body>
 </html>

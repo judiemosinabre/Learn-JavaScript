@@ -1,26 +1,82 @@
 body {
-    background: black;
-    margin: 0px;
-    padding: 0px;
+    background: white;
+    margin: 0;
+    padding: 0;
     min-height: 100vh;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
 }
 
 #container {
-    border: 2px solid blanchedalmond;
-    border-radius: 10px;
+    border: 2px solid black;
+    border-radius: 50px;
     color: white;
     text-align: center;
-    align-items: center;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center contents horizontally */
+    padding: 15px;
+    background-color: #333;
+    width: 260px; /* Set a fixed width for the container */
+}
+
+#history {
+    width: 100%; /* Make it fit within the container */
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    text-align: right;
+    margin-bottom: -5px;
+    background-color: #333;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+#answer {
+    width: 100%; /* Make it fit within the container */
+    font-size: 30px;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: #222;
+    color: white;
+    text-align: right;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px; /* Reduce the gap between buttons */
 }
 
 button {
     cursor: pointer;
-    font-size: 25px;
+    font-size: 20px;
     padding: 15px;
     border: 1px solid white;
-    border-radius: 25px;
-    width: 8%;
-    height: 10%;
+    border-radius: 25px; /* Make buttons rectangular with rounded corners */
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.row-1 {
+    background-color: #444;
+}
+
+.col-4 {
+    grid-column: span 1;
+    background-color: orange;
+}
+
+#zero {
+    grid-column: span 2; /* Make the zero button span two columns */
 }
