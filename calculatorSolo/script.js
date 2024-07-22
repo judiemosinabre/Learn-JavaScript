@@ -42,8 +42,7 @@ allClear.addEventListener("click",function() {
 
 clear.addEventListener("click", function(){
     firstNum.pop()
-    answer.textContent = firstNum.join("")
-
+    answer.textContent = firstNum
 })
 
 function operatorClicked() {
