@@ -55,7 +55,7 @@ plus.addEventListener("click",function(){
     plusActive = true
 })
 
-minus.addEventListener("clcik", function(){
+minus.addEventListener("click", function(){
     operatorClicked()
     minusActive = true
 })
@@ -88,8 +88,8 @@ function sumGetter(){
 function diffGetter(){
     firstNum = parseInt(firstNum.join(''), 10) //10 = decimal
     secondNum = parseInt(secondNum.join(''), 10)
-
-    return firstNum - secondNum
+    return (secondNum - firstNum) 
+    
 }
 
 //number functions
