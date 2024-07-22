@@ -14,8 +14,9 @@ const eightBtn = document.getElementById("eight")
 const nineBtn = document.getElementById("nine")
 
 const allClear = document.getElementById("all-clear")
+const plus = document.getElementById("plus")
 
-let numHolder = []
+let firstNum = []
 
 allClear.addEventListener("click",function() {
     numHolder = []
@@ -23,6 +24,10 @@ allClear.addEventListener("click",function() {
     answer.textContent ="‎"
     answer.style.color = "#222"
     answer.style.border = "1px solid white"
+})
+
+plus.addEventListener("click",function(){
+
 })
 
 //number functions
