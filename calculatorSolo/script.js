@@ -68,6 +68,11 @@ multiply.addEventListener("click",function(){
     multiplyActive = true
 })
 
+divide.addEventListener("click", function(){
+    operatorClicked()
+    divideActive = true
+})
+
 equal.addEventListener("click", function(){
     history.textContent ="‎"
     if (plusActive) {
@@ -83,9 +88,10 @@ equal.addEventListener("click", function(){
         answer.textContent = productGetter()
         multiplyActive = false
     }
-    // else if(){
-
-    // }
+    else if(divideActive){
+        answer.textContent = quotientGetter()
+        divideActive = false
+    }
 })
 
 
@@ -107,6 +113,12 @@ function productGetter() {
     firstNum = parseInt(firstNum.join(''), 10) //10 = decimal
     secondNum = parseInt(secondNum.join(''), 10)
     return secondNum * firstNum
+}
+
+function quotientGetter(){
+    firstNum = parseInt(firstNum.join(''), 10) //10 = decimal
+    secondNum = parseInt(secondNum.join(''), 10)
+    return secondNum / firstNum
 }
 
 //number functions
