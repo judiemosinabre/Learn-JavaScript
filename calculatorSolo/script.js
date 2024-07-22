@@ -16,7 +16,7 @@ const nineBtn = document.getElementById("nine")
 const allClear = document.getElementById("all-clear")
 const plus = document.getElementById("plus")
 
-let firstNum = []
+let numHolder = []
 
 allClear.addEventListener("click",function() {
     numHolder = []
@@ -27,7 +27,7 @@ allClear.addEventListener("click",function() {
 })
 
 plus.addEventListener("click",function(){
-
+    
 })
 
 //number functions
