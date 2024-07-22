@@ -19,6 +19,8 @@ const clear = document.getElementById("clear")
 const equal = document.getElementById("equal")
 const plus = document.getElementById("plus")
 const minus = document.getElementById("minus")
+const multiply = document.getElementById("multiply")
+const divide = document.getElementById("divide")
 
 
 let firstNum = []
@@ -26,7 +28,8 @@ let secondNum = []
 
 let plusActive = false
 let minusActive = false
-
+let multiplyActive = false
+let divideActive = false
 
 allClear.addEventListener("click",function() {
     firstNum = []
@@ -60,18 +63,26 @@ minus.addEventListener("click", function(){
     minusActive = true
 })
 
+multiply.addEventListener("click",function(){
+    operatorClicked()
+    multiplyActive = true
+})
+
 equal.addEventListener("click", function(){
     history.textContent ="‎"
     if (plusActive) {
         answer.textContent = sumGetter()
         console.log(sumGetter())
+        plusActive = false
     }
     else if(minusActive){
         answer.textContent = diffGetter()
+        minusActive = false
     }
-    // else if(){
-
-    // }
+    else if(multiplyActive){
+        answer.textContent = productGetter()
+        multiplyActive = false
+    }
     // else if(){
 
     // }
@@ -90,6 +101,12 @@ function diffGetter(){
     secondNum = parseInt(secondNum.join(''), 10)
     return (secondNum - firstNum) 
     
+}
+
+function productGetter() {
+    firstNum = parseInt(firstNum.join(''), 10) //10 = decimal
+    secondNum = parseInt(secondNum.join(''), 10)
+    return secondNum * firstNum
 }
 
 //number functions
