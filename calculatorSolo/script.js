@@ -16,15 +16,17 @@ const nineBtn = document.getElementById("nine")
 const history = document.getElementById("history")
 const allClear = document.getElementById("all-clear")
 const clear = document.getElementById("clear")
-const plus = document.getElementById("plus")
 const equal = document.getElementById("equal")
+const plus = document.getElementById("plus")
+const minus = document.getElementById("minus")
+
 
 let firstNum = []
 let secondNum = []
 
 let plusActive = false
+let minusActive = false
 
-let finalAnswer = 0
 
 allClear.addEventListener("click",function() {
     firstNum = []
@@ -41,15 +43,21 @@ clear.addEventListener("click", function(){
 
 })
 
-plus.addEventListener("click",function(){
+function operatorClicked() {
     history.textContent = firstNum.join("")
     secondNum = firstNum
     firstNum = []
     answer.textContent = "‎" //empty
-    plusActive = true
+}
 
-    console.log(secondNum)
-    console.log(firstNum)
+plus.addEventListener("click",function(){
+    operatorClicked()
+    plusActive = true
+})
+
+minus.addEventListener("clcik", function(){
+    operatorClicked()
+    minusActive = true
 })
 
 equal.addEventListener("click", function(){
@@ -58,6 +66,15 @@ equal.addEventListener("click", function(){
         answer.textContent = sumGetter()
         console.log(sumGetter())
     }
+    else if(minusActive){
+        answer.textContent = diffGetter()
+    }
+    // else if(){
+
+    // }
+    // else if(){
+
+    // }
 })
 
 
@@ -66,6 +83,13 @@ function sumGetter(){
     secondNum = parseInt(secondNum.join(''), 10)
 
     return firstNum + secondNum
+}
+
+function diffGetter(){
+    firstNum = parseInt(firstNum.join(''), 10) //10 = decimal
+    secondNum = parseInt(secondNum.join(''), 10)
+
+    return firstNum - secondNum
 }
 
 //number functions
