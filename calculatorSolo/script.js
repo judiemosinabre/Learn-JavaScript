@@ -17,59 +17,82 @@ const allClear = document.getElementById("all-clear")
 
 let numHolder = []
 
-// allClear.addEventListener("click",function(){
-//     answer.textContent = 0
-//     answer.style.color = "#222"
-// })
+allClear.addEventListener("click",function() {
+    numHolder = []
+    console.log(numHolder)
+    answer.textContent ="‎"
+    answer.style.color = "#222"
+    answer.style.border = "1px solid white"
+})
 
 //number functions
 zeroBtn.addEventListener("click", function(){
-    answer.textContent += 0
+    console.log(numHolder)
+    numHolder.push(0)
+    answer.textContent = numHolder.join("")
     answer.style.color = "white"
 })
 
 oneBtn.addEventListener("click", function(){
-    answer.textContent += 1
+    console.log(numHolder)
+    numHolder.push(1)
+    answer.textContent = numHolder.join("")
     answer.style.color = "white"
 })
 
 twoBtn.addEventListener("click", function(){
-    answer.textContent += 2
+    console.log(numHolder)
+    numHolder.push(2)
+    answer.textContent = numHolder.join("")
     answer.style.color = "white"
 })
 
 threeBtn.addEventListener("click", function(){
-    answer.textContent += 3
+    console.log(numHolder)
+    numHolder.push(3)
+    answer.textContent = numHolder.join("")
     answer.style.color = "white"
 })
 
 fourBtn.addEventListener("click", function(){
-    answer.textContent += 4
+    console.log(numHolder)
+    numHolder.push(4)
+    answer.textContent = numHolder.join("")
     answer.style.color = "white"
 })
 
 fiveBtn.addEventListener("click", function(){
-    answer.textContent += 5
+    console.log(numHolder)
+    numHolder.push(5)
+    answer.textContent = numHolder.join("")
     answer.style.color = "white"
 })
 
 sixBtn.addEventListener("click", function(){
-    answer.textContent += 6
+    console.log(numHolder)
+    numHolder.push(6)
+    answer.textContent = numHolder.join("")
     answer.style.color = "white"
 })
 
 sevenBtn.addEventListener("click", function(){
-    answer.textContent += 7
+    console.log(numHolder)
+    numHolder.push(7)
+    answer.textContent = numHolder.join("")
     answer.style.color = "white"
 })
 
 eightBtn.addEventListener("click", function(){
-    answer.textContent += 8
+    console.log(numHolder)
+    numHolder.push(8)
+    answer.textContent = numHolder.join("")
     answer.style.color = "white"
 })
 
 nineBtn.addEventListener("click", function(){
-    answer.textContent += 9
+    console.log(numHolder)
+    numHolder.push(9)
+    answer.textContent = numHolder.join("")
     answer.style.color = "white"
 })
 
