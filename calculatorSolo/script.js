@@ -21,6 +21,7 @@ const plus = document.getElementById("plus")
 const minus = document.getElementById("minus")
 const multiply = document.getElementById("multiply")
 const divide = document.getElementById("divide")
+const modulus = document.getElementById("modulus")
 
 
 let firstNum = []
@@ -30,6 +31,7 @@ let plusActive = false
 let minusActive = false
 let multiplyActive = false
 let divideActive = false
+let modulusActive = false
 
 allClear.addEventListener("click",function() {
     firstNum = []
@@ -72,6 +74,11 @@ divide.addEventListener("click", function(){
     divideActive = true
 })
 
+modulus.addEventListener("click", function(){
+    operatorClicked()
+    modulusActive = true
+})
+
 equal.addEventListener("click", function(){
     history.textContent ="‎"
     if (plusActive) {
@@ -90,6 +97,10 @@ equal.addEventListener("click", function(){
     else if(divideActive){
         answer.textContent = quotientGetter()
         divideActive = false
+    }
+    else if(modulusActive){
+        answer.textContent = moduloGetter()
+        modulusActive = false
     }
 })
 
@@ -118,6 +129,15 @@ function quotientGetter(){
     firstNum = parseInt(firstNum.join(''), 10) //10 = decimal
     secondNum = parseInt(secondNum.join(''), 10)
     return secondNum / firstNum
+}
+
+function moduloGetter(){
+    // firstNum = parseInt(firstNum.join(''), 10) //10 = decimal
+    // secondNum = parseInt(secondNum.join(''), 10)
+    // return (secondNum % firstNum).toFixed(2)
+    // firstNum = parseFloat(firstNum.join('')).toFixed(2) 
+    // secondNum = parseFloat(secondNum.join('')).toFixed(2) 
+    // return (secondNum % firstNum).toFixed(2)
 }
 
 //number functions
