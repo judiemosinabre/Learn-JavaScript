@@ -1,4 +1,12 @@
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
 body {
+    font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
     background-color: rgba(249, 220, 92, 1);
@@ -16,15 +24,16 @@ body {
     background-color: white;
     border-radius: 75px;
     border: 1px solid black;
+    margin-bottom: 20px;
 
 }
 
 #date {
-    font-size: 18px;
+    font-size: 14px;
     justify-content: left;
     display: flex;
     margin-top: 35px;
-    margin-bottom: 0;
+    margin-bottom: 1px;
     margin-left: 37px;
 
 
@@ -41,7 +50,8 @@ body {
 #toDo {
     font-size: 48px;
     font-weight: bold;
-    margin: 20px;
+    margin-left: 10px;
+    margin-top: auto;
 }
 
 hr {
@@ -58,6 +68,7 @@ hr {
     font-size: 13px;
     color: white;
     cursor: pointer;
+    margin-bottom: 25px;
 }
 
 #task-input {
