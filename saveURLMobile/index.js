@@ -1,16 +1,18 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js"
-import { getDatabase } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-database.js"
-require("dotenv").config()
+import { getDatabase, 
+    ref, push } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-database.js"
+// require("dotenv").config()
 
 const firebaseConfig = {
-    // databaseURL: "https://leads-tracker-app-d1f10-default-rtdb.asia-southeast1.firebasedatabase.app/"
-    databaseURL: process.env.DATABASE_URL
+    databaseURL: "https://leads-tracker-app-d1f10-default-rtdb.asia-southeast1.firebasedatabase.app/"
+    // databaseURL: process.env.DATABASE_URL
 }
 
 const app = initializeApp(firebaseConfig)
 const database = getDatabase(app)
 
 console.log(firebaseConfig.databaseURL)
+const referenceInDB = ref(database, "leads")
 
 
 const inputEl = document.getElementById("input-el")
@@ -26,6 +28,7 @@ deleteBtn.addEventListener("dblclick", function(){
 
 inputBtn.addEventListener("click", function(){
     console.log(inputEl.value)
+    push(referenceInDB, inputEl.value)
     clearText(inputEl)
 
 })
