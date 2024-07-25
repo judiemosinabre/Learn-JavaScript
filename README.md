@@ -17,4 +17,4 @@ files for learning JavaScript
 
 
 <h6> Date Started: 07/02/2024 <br>
-Date Finished: </h6>
+Date Finished: 07/25/2024 </h6>
