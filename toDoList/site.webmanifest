@@ -1,0 +1,12 @@
+{
+    "name":"To Do App",
+    "short_name":"To Do",
+    "icons":
+        [
+            {"src":"/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},
+            {"src":"/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}
+        ],
+    "theme_color":"rgba(0, 80, 157, 1)",
+    "background_color":"rgba(255, 236, 92, 1)",
+    "display":"standalone"
+}
