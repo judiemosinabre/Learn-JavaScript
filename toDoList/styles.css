@@ -83,8 +83,16 @@ hr {
     border: 1px solid black;
     border-radius: 18px;
     text-align: center;
-    color: rgba(0, 0, 0, 0.38);
+    color: black;
 }
+
+input::placeholder {
+    color: rgba(0, 0, 0, 0.40);
+  }
+
+#task-input:focus {
+    color: black;
+  }
 
 .buttons {
     display: flex;
