@@ -11,8 +11,6 @@ files for learning JavaScript
     <li>Blackjack Game: https://learn-javascript-by-jarchives.netlify.app/blackjackgame/</li>
     <li>Scoreboard: https://learn-javascript-by-jarchives.netlify.app/basketballscoreboard/</li>
     <li>Passenger Counter: https://learn-javascript-by-jarchives.netlify.app/passengercounterapp/</li>
-    
-
   </ul>
 </h5>
 
