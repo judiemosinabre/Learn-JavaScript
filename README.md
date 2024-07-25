@@ -4,13 +4,13 @@ files for learning JavaScript
 <h6>You can also view them by opening the corresponding links! </h6>
 <h5>
   <ul>
-    <li>To Do List: https://main--dynamic-sprite-2d4f9e.netlify.app/todolist/</li>
-    <li>Calculator: https://main--dynamic-sprite-2d4f9e.netlify.app/calculatorsolo/</li>
-    <li>Unit Converter: https://main--dynamic-sprite-2d4f9e.netlify.app/unitconverter/</li>
-    <li>Password Generator: https://main--dynamic-sprite-2d4f9e.netlify.app/passwordgenerator/</li>
-    <li>Blackjack Game: https://main--dynamic-sprite-2d4f9e.netlify.app/blackjackgame/</li>
-    <li>Scoreboard: https://main--dynamic-sprite-2d4f9e.netlify.app/basketballscoreboard/</li>
-    <li>Passenger Counter: https://main--dynamic-sprite-2d4f9e.netlify.app/passengercounterapp/</li>
+    <li>To Do List: https://learn-javascript-by-jarchives.netlify.app/todolist/</li>
+    <li>Calculator: https://learn-javascript-by-jarchives.netlify.app/calculatorsolo/</li>
+    <li>Unit Converter: https://learn-javascript-by-jarchives.netlify.app/unitconverter/</li>
+    <li>Password Generator: https://learn-javascript-by-jarchives.netlify.app/passwordgenerator/</li>
+    <li>Blackjack Game: https://learn-javascript-by-jarchives.netlify.app/blackjackgame/</li>
+    <li>Scoreboard: https://learn-javascript-by-jarchives.netlify.app/basketballscoreboard/</li>
+    <li>Passenger Counter: https://learn-javascript-by-jarchives.netlify.app/passengercounterapp/</li>
     
 
   </ul>
