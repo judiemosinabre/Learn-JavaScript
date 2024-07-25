@@ -45,6 +45,6 @@ addBtn.addEventListener("click", function(){
 })
 
 delAllBtn.addEventListener("dblclick", function(){
-    // remove(referenceInDb)
+    remove(referenceInDb)
     ulClass.innerHTML = ""
 })
