@@ -7,8 +7,6 @@ files for learning JavaScript
     <li>To Do List: https://main--dynamic-sprite-2d4f9e.netlify.app/todolist/</li>
     <li>Calculator: https://main--dynamic-sprite-2d4f9e.netlify.app/calculatorsolo/</li>
     <li>Unit Converter: https://main--dynamic-sprite-2d4f9e.netlify.app/unitconverter/</li>
-    <li>Save URL Extension: https://main--dynamic-sprite-2d4f9e.netlify.app/saveurl/</li>
-    <li>Rock Paper Scissor Game: https://main--dynamic-sprite-2d4f9e.netlify.app/rockpaperscissor/</li>
     <li>Password Generator: https://main--dynamic-sprite-2d4f9e.netlify.app/passwordgenerator/</li>
     <li>Blackjack Game: https://main--dynamic-sprite-2d4f9e.netlify.app/blackjackgame/</li>
     <li>Scoreboard: https://main--dynamic-sprite-2d4f9e.netlify.app/basketballscoreboard/</li>
