@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js"
-import { getDatabase, ref, push, onValue } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-database.js"
+import { getDatabase, ref, push, remove, onValue } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-database.js"
 
 const firebaseConfig = {
     databaseURL: "https://to-do-list-bece5-default-rtdb.asia-southeast1.firebasedatabase.app/"
@@ -27,15 +27,24 @@ function render(arr){
 }
 
 onValue(referenceInDb, function(snapshot){
-    const snapshotValues = snapshot.val()
-    console.log(snapshotValues)
+    const snapshotDoesExist = snapshot.exists()
+    if (snapshotDoesExist) {
+        const snapshotValues = snapshot.val()
+        console.log(snapshotValues)
 
-    const toDoList = Object.values(snapshotValues) //get values only and store in arr
-    render(toDoList)
-    console.log("rendered latest")
+        const toDoList = Object.values(snapshotValues) //get values only and store in arr
+        render(toDoList)
+        console.log("rendered latest") //for debuggingg
+    }
+    
 })
 
 addBtn.addEventListener("click", function(){
     push(referenceInDb, inputTask.value)
     inputTask.value = ""
+})
+
+delAllBtn.addEventListener("dblclick", function(){
+    remove(referenceInDb)
+    ulClass.innerHTML = ""
 })
